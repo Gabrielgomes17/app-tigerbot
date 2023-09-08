@@ -3,6 +3,7 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     position: relative;
+    padding: 25px;
 }
 
 #bootstrap-override{
@@ -14,6 +15,10 @@ img {
 }
 
 .gerador {
+    position: relative;
+}
+
+.container{
     position: relative;
 }
 

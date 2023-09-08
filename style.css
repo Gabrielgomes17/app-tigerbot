@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+}
+
+#bootstrap-override{
+    background: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.gerador {
+    position: relative;
+}
+
+.gerador ul {
+    position: absolute;
+    width: 90%;
+    z-index: 999;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gerador ul li {
+    width: 85%;
+    height: 100px;
+    border: 1px solid #9d2525;
+    border-radius: 10px;
+    margin: 25px;
+    display: flex;
+}
+
+.gerador ul li h3 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 100px;
+    color: #9d2525;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.66);
+}
+
+.gerador ul li img {
+    width: 64px;
+    height: 64px;
+    margin: 20px;
+}
+
+.gerador ul li:nth-child(2) img, .gerador ul li:nth-child(3) img {
+    width: 54px !important;
+    height: 54px !important;
+}
+
+.gerador .btn-gerar {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    bottom: 4%;
+    transform: translateX(-50%);
+    height: 70px;
+    border: none;
+    background-color: #30c620;
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #FFF;
+}
+
+canvas {
+    display:block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.gerador .btn-gerar:disabled {
+    background-color: #b8b4b4;
+}
+
+.betSeteK{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+    justify-content: center;
+    align-items: center;
+}
+
+.betSeteK iframe{
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    height: 600px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .gerador ul li {
+        height: 60px !important;
+    }
+
+    .gerador ul li img {
+        width: 48px !important;
+        height: 48px !important;
+        margin: 8px !important;
+    }
+
+    .gerador ul li:nth-child(2) img, .gerador ul li:nth-child(3) img {
+        width: 36px !important;
+        height: 36px !important;
+        margin: 12px !important;
+    }
+
+    .gerador ul li h3 {
+        line-height: 60px !important;
+        font-size: 18px !important;
+    }
+
+    .gerador .btn-gerar {
+        height: 38px !important;
+    }
+}
